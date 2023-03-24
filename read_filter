@@ -27,3 +27,5 @@ good = []
 for d in data:
     if "good" in d:
     	good.append(d)
+ print("共有", len(good), "筆留言提到GOOD")
+ print(good[0])
