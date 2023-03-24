@@ -29,3 +29,6 @@ for d in data:
     	good.append(d)
  print("共有", len(good), "筆留言提到GOOD")
  print(good[0])
+ 
+ #篩選如果留言有"GOOD">進階
+ good = [d for d in data if "good" in d]
