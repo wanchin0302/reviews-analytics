@@ -24,7 +24,10 @@ print(wc["Joyce"])
 
 while True:
 	word = input("請問您想查什麼字:")
-	if word =="q":
+	if word == "q":
 		break
-	print(word,"出現過的次數為:", wc[word])
+	if word in wc:
+		print(word, "出現過的次數為:", wc[word])
+	else:
+		print("查無此字。")
 print(謝謝使用)
